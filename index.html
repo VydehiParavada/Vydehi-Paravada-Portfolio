@@ -1,239 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vydehi Paravada - Portfolio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f1e1; /* Light yellow background */
-            color: #4f4f4f;
-            scroll-behavior: smooth;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #c85e17; /* Warm brown color */
-            color: #fff;
-            padding: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        header .left-side {
-            max-width: 300px;
-        }
-        header .left-side h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        header .left-side h2 {
-            font-size: 1.5rem;
-            margin-top: 10px;
-            color: #f8b400; /* Bright yellow */
-        }
-        .contact-info {
-            font-size: 1rem;
-            color: #fff;
-            margin-top: 10px;
-        }
-        .contact-info a {
-            color: #f8b400;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .profile-img {
-            display: block;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 4px solid #f8b400;
-            box-shadow: 0px 4px 10px rgba(255, 183, 0, 0.6);
-        }
-        
-        nav {
-            background: #fff;
-            padding: 15px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-            color: #c85e17;
-            text-decoration: none;
-            font-size: 1.1rem;
-            margin: 0 15px;
-            padding: 10px 15px;
-            display: inline-block;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            background: #f8b400;
-            color: #fff;
-            border-radius: 5px;
-        }
-
-        section {
-            padding: 40px;
-            background: #fff;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #c85e17;
-            font-size: 1.8rem;
-            border-bottom: 2px solid #c85e17;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: #c85e17;
-            font-size: 1.5rem;
-            margin-top: 10px;
-        }
-
-        p, ul {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .skills-box {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .skills-box div {
-            background: #e3e3e3;
-            padding: 15px;
-            border-radius: 8px;
-            width: 250px;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .highlight {
-            color: #f8b400;
-            font-weight: bold;
-        }
-
-        .cert-img, .award-img {
-            width: 150px;
-            height: auto;
-            margin: 15px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(255, 183, 0, 0.6);
-        }
-
-        .contact-info {
-            margin-top: 20px;
-        }
-
-        .contact-info a {
-            color: #f8b400;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vydehi Paravada - Technical Test Lead</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+    }
+    .left-section {
+      width: 20%;
+      background-color: #1d3557;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .right-section {
+      width: 80%;
+      padding: 20px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .name {
+      font-size: 32px;
+      font-weight: bold;
+      color: #f1faee;
+    }
+    .title {
+      font-size: 24px;
+      color: #e63946;
+    }
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .contact-info a {
+      color: #f1faee;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .section-title {
+      font-size: 24px;
+      margin-top: 30px;
+      color: #e63946;
+    }
+    .content-box {
+      margin-top: 15px;
+    }
+    .content-box ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .content-box li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .image {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
-
+  <div class="left-section">
     <header>
-        <div class="left-side">
-            <img src="profile.jpg" alt="Profile Photo" class="profile-img">
-            <h1>Vydehi Paravada</h1>
-            <h2>QA Lead</h2>
-            <div class="contact-info">
-                <span>vydehiparavada@gmail.com | +1 919-793-8199 |</span>
-                <a href="https://www.linkedin.com/in/vydehi-paravada" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/vydehi-paravada" target="_blank">GitHub</a> |
-                Cary, NC
-            </div>
-        </div>
+      <img src="profile.jpg" alt="Vydehi's Profile Picture" class="image">
+      <div class="name">Vydehi Paravada</div>
+      <div class="title">Technical Test Lead</div>
     </header>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:vydehiparavada@gmail.com">vydehiparavada@gmail.com</a></p>
+      <p><strong>Phone:</strong> +1 919-793-8199</p>
+      <p><strong>Location:</strong> Cary, NC</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vydehiparavada">LinkedIn</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/vydehiparavada">GitHub</a></p>
+    </div>
+  </div>
 
-    <nav>
-        <a href="#experience">Work Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#awards">Awards</a>
-        <a href="#education">Education</a>
-    </nav>
-
-    <section id="experience" class="container">
-        <h2>Work Experience</h2>
-        <h3>Infosys - Service Corporation International (Mar 2020 – May 2023)</h3>
+  <div class="right-section">
+    <section>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="content-box">
+        <h3>Infosys - Service Corporation International</h3>
+        <p><strong>Role:</strong> Technical Test Lead | <strong>Dates:</strong> Mar 2020 – May 2023</p>
         <ul>
-            <li>Acted as SME in UAT testing for 15 QA Engineers...</li>
-            <li>Defined test strategy, executed test plans, reviewed system functionality...</li>
+          <li>Led UAT testing for 15 QA Engineers, reducing critical defects by 20%</li>
+          <li>Improved test efficiency by 40% through Agile practices</li>
         </ul>
-
-        <h3>Infosys - United Airlines - ATW Application (Jan 2019 – Feb 2020)</h3>
-        <ul>
-            <li>Automated testing with Cucumber framework...</li>
-        </ul>
-
-        <h3>Infosys - Merrill Lynch (Bank of America) – Test Engineer (Nov 2015 – Dec 2018)</h3>
-        <ul>
-            <li>Performed E2E, regression, and cross-platform mobile testing...</li>
-        </ul>
+      </div>
+      <!-- More work experiences can be added here -->
     </section>
 
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <div class="skills-box">
-            <div>
-                <h3>QA Tools</h3>
-                <p>Selenium, Postman, Fiddler, Protractor, Appium</p>
-            </div>
-            <div>
-                <h3>Languages</h3>
-                <p>Python, HTML, CSS, SQL, Gherkin</p>
-            </div>
-        </div>
+    <section>
+      <h2 class="section-title">Certifications</h2>
+      <div class="content-box">
+        <p><strong>Microsoft Azure AI-900 Fundamentals</strong></p>
+        <img src="azure_cert.jpg" alt="Azure Certification" class="image">
+        <p><strong>Tricentis Certified Automation Specialist Level2 (TOSCA)</strong></p>
+        <img src="tosca_cert.jpg" alt="TOSCA Certification" class="image">
+      </div>
     </section>
 
-    <section id="certifications" class="container">
-        <h2>Certifications</h2>
+    <section>
+      <h2 class="section-title">Awards</h2>
+      <div class="content-box">
+        <p><strong>Best Accelerator Award</strong> (2019) - Awarded for delivering a defect-free application.</p>
+        <img src="award.jpg" alt="Award" class="image">
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <div class="content-box">
         <ul>
-            <li>Microsoft Azure AI-900 Fundamentals</li>
-            <li>Tricentis Certified Automation Specialist Level 2 (TOSCA)</li>
+          <li><strong>QA Tools:</strong> Selenium, Postman, Fiddler, Protractor, Appium</li>
+          <li><strong>Languages:</strong> Python, HTML, CSS, SQL, Gherkin</li>
         </ul>
-        <img src="azure_cert.jpg" alt="Azure Certification" class="cert-img">
-        <img src="tricentis_cert.jpg" alt="Tricentis Certification" class="cert-img">
+      </div>
     </section>
 
-    <section id="awards" class="container">
-        <h2>Awards</h2>
-        <ul>
-            <li>Best Accelerator Award - Infosys (2019)</li>
-        </ul>
-        <img src="award1.jpg" alt="Award 1" class="award-img">
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="content-box">
+        <p><strong>Master of Science in Information Technology and Management</strong> - University of North Carolina, Greensboro, NC (Expected May 2025)</p>
+        <p><strong>Bachelor of Technology in Computer Science and Engineering</strong> - Jawaharlal Nehru Technological University, India (April 2015)</p>
+      </div>
     </section>
-
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <ul>
-            <li><span class="highlight">Master of Science:</span> IT and Management (May 2025), University of North Carolina, Greensboro, GPA: 3.9</li>
-            <li><span class="highlight">Bachelor of Technology:</span> Computer Science and Engineering (April 2015), Jawaharlal Nehru Technological University, India, GPA: 4.0</li>
-        </ul>
-    </section>
-
+  </div>
 </body>
 </html>
