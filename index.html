@@ -9,8 +9,8 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a2e;
-            color: #e3e3e3;
+            background-color: #f4f7fa;
+            color: #333;
             scroll-behavior: smooth;
         }
         .container {
@@ -19,32 +19,32 @@
             overflow: hidden;
         }
         header {
-            background: #0f3460;
+            background: #3d72b4;
             color: #fff;
             text-align: center;
             padding: 50px 0;
         }
         header h1 {
             font-size: 2.5rem;
+            margin: 0;
         }
         header p {
             font-size: 1.2rem;
             margin: 10px 0;
         }
         nav {
-            background: #16213e;
-            padding: 12px 0;
+            background: #fff;
+            padding: 15px 0;
             text-align: center;
             position: sticky;
             top: 0;
             width: 100%;
-            z-index: 1000;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: #f8b400;
+            color: #3d72b4;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin: 0 15px;
             padding: 10px 15px;
             display: inline-block;
@@ -52,33 +52,61 @@
         }
         nav a:hover {
             background: #f8b400;
-            color: #16213e;
+            color: #fff;
             border-radius: 5px;
         }
+
         section {
             padding: 40px;
-            background: #0f3460;
+            background: #fff;
             margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
-            color: #f8b400;
-            border-bottom: 2px solid #f8b400;
-            padding-bottom: 5px;
+            color: #3d72b4;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #3d72b4;
+            padding-bottom: 10px;
         }
+
+        h3 {
+            color: #3d72b4;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        p, ul {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
         ul {
             list-style: none;
             padding: 0;
         }
-        ul li {
-            padding: 8px 0;
-            font-size: 1.1rem;
+
+        .skills-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
+
+        .skills-box div {
+            background: #e3e3e3;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
         .highlight {
             color: #f8b400;
             font-weight: bold;
         }
+
         .profile-img {
             display: block;
             margin: 20px auto;
@@ -88,6 +116,7 @@
             border: 4px solid #f8b400;
             box-shadow: 0px 4px 10px rgba(255, 183, 0, 0.6);
         }
+
         .cert-img, .award-img {
             width: 150px;
             height: auto;
@@ -95,6 +124,17 @@
             border-radius: 8px;
             box-shadow: 0px 4px 10px rgba(255, 183, 0, 0.6);
         }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #f8b400;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -104,45 +144,82 @@
             <img src="profile.jpg" alt="Profile Photo" class="profile-img">
             <h1>Vydehi Paravada</h1>
             <p>
-                <a href="mailto:vydehiparavada@gmail.com" style="color: #f8b400;">vydehiparavada@gmail.com</a> | 
-                <a href="https://www.linkedin.com/in/vydehi-paravada" target="_blank" style="color: #f8b400;">LinkedIn</a> | 
-                <a href="https://github.com/vydehi-paravada" target="_blank" style="color: #f8b400;">GitHub</a> |
+                <span class="contact-info">vydehiparavada@gmail.com | +1 919-793-8199 |</span>
+                <a href="https://www.linkedin.com/in/vydehi-paravada" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/vydehi-paravada" target="_blank">GitHub</a> |
                 Cary, NC
             </p>
         </div>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#experience">Work Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
         <a href="#awards">Awards</a>
         <a href="#education">Education</a>
     </nav>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Results-driven <span class="highlight">Technical Test Lead</span> with 7.7 years of experience in automation, manual testing, and QA leadership. Improved test efficiency by <span class="highlight">40%</span> and reduced defects by <span class="highlight">30%</span>. Skilled in Agile, Waterfall, and cross-industry problem-solving.</p>
+    <section id="experience" class="container">
+        <h2>Work Experience</h2>
+
+        <h3>Infosys - Service Corporation International (Mar 2020 – May 2023)</h3>
+        <ul>
+            <li>Acted as SME in UAT testing for 15 QA Engineers, collaborating with stakeholders to validate end-user requirements and ensure defect-free deployments with zero critical defects.</li>
+            <li>Defined test strategy, executed test plans, reviewed system functionality, reducing critical defects by 20%.</li>
+            <li>Led test planning and execution within SDLC, achieving 100% test coverage.</li>
+            <li>Improved functional and regression testing efficiency by 40% through Agile practices and sprint retrospectives.</li>
+            <li>Optimized cross-team collaboration using TFS & JIRA, reducing sprint decision-making time by 20%.</li>
+            <li>Identified and troubleshot 100+ defects, authored 400+ test cases, and maintained a high test pass rate.</li>
+            <li>Led Forms validation of UI, workflows ensuring 99% multilingual accuracy (English, Spanish, French).</li>
+        </ul>
+
+        <h3>Infosys - United Airlines - ATW Application (Jan 2019 – Feb 2020)</h3>
+        <ul>
+            <li>Automated testing with Cucumber framework, ensuring 99% stability and reducing manual effort by 30%.</li>
+            <li>Led functional and SIT post-deployment sanity and smoke checks, reducing issues by 15%.</li>
+            <li>Optimized system performance and API microservices using Postman, boosting efficiency by 25%.</li>
+            <li>Enhanced testing efficiency by 30% by working closely with analysts to estimate test execution during Scrum calls and implementing a Requirement Traceability Matrix (RTM) to ensure comprehensive test coverage.</li>
+            <li>Awarded the Best Accelerator Award in 2019 for delivering a defect-free application through timely releases.</li>
+        </ul>
+
+        <h3>Infosys - Merrill Lynch (Bank of America) – Test Engineer (Nov 2015 – Dec 2018)</h3>
+        <ul>
+            <li>Performed E2E, regression, and cross-platform mobile testing using Appium, ensuring 99% test coverage for 401k insurance applications using HP-ALM.</li>
+            <li>Led test data management using SQL queries and Linux commands, reducing manual effort by 35%.</li>
+            <li>Developed a PDF Converter Tool using Java-Selenium to streamline documentation and reporting.</li>
+            <li>Authored 1 million reusable test cases, significantly enhancing test coverage and efficiency.</li>
+        </ul>
     </section>
 
     <section id="skills" class="container">
         <h2>Skills</h2>
-        <ul>
-            <li><span class="highlight">QA Tools:</span> Selenium, Postman, Fiddler, Protractor, Appium</li>
-            <li><span class="highlight">Languages:</span> Python, HTML, CSS, SQL, Gherkin</li>
-            <li><span class="highlight">Test Management:</span> HP-ALM, TFS, JIRA</li>
-            <li><span class="highlight">CI/CD & DevOps:</span> GitHub, GitLab, Jenkins</li>
-        </ul>
-    </section>
-
-    <section id="experience" class="container">
-        <h2>Professional Experience</h2>
-        <h3>Infosys - Service Corporation International (Mar 2020 – May 2023)</h3>
-        <ul>
-            <li>Acted as SME in UAT testing for 15 QA Engineers.</li>
-            <li>Defined test strategy, executed test plans, and reduced critical defects by 20%.</li>
-        </ul>
+        <div class="skills-box">
+            <div>
+                <h3>QA Tools</h3>
+                <p>Selenium, Postman, Fiddler, Protractor, Appium</p>
+            </div>
+            <div>
+                <h3>Languages</h3>
+                <p>Python, HTML, CSS, SQL, Gherkin</p>
+            </div>
+            <div>
+                <h3>Test Management</h3>
+                <p>HP-ALM, TFS, JIRA</p>
+            </div>
+            <div>
+                <h3>CI/CD & DevOps</h3>
+                <p>GitHub, GitLab, Jenkins</p>
+            </div>
+            <div>
+                <h3>Databases & API</h3>
+                <p>DBMS, REST API, MySQL Workbench, PostgreSQL</p>
+            </div>
+            <div>
+                <h3>Frameworks</h3>
+                <p>Cucumber, Pandas, NumPy, Matplotlib, BDD</p>
+            </div>
+        </div>
     </section>
 
     <section id="certifications" class="container">
@@ -151,6 +228,7 @@
             <li>Microsoft Azure AI-900 Fundamentals</li>
             <li>Tricentis Certified Automation Specialist Level 2 (TOSCA)</li>
             <li>Global Agile Developer Certification</li>
+            <li>Manual Testing Certification</li>
         </ul>
         <img src="azure_cert.jpg" alt="Azure Certification" class="cert-img">
         <img src="tricentis_cert.jpg" alt="Tricentis Certification" class="cert-img">
@@ -168,6 +246,7 @@
         <h2>Education</h2>
         <ul>
             <li><span class="highlight">Master of Science:</span> IT and Management (May 2025), University of North Carolina, Greensboro, GPA: 3.9</li>
+            <li><span class="highlight">Bachelor of Technology:</span> Computer Science and Engineering (April 2015), Jawaharlal Nehru Technological University, India, GPA: 4.0</li>
         </ul>
     </section>
 
