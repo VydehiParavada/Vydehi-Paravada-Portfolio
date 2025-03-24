@@ -9,8 +9,8 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f7f1e1; /* Light yellow background */
+            color: #4f4f4f;
             scroll-behavior: smooth;
         }
         .container {
@@ -19,20 +19,24 @@
             overflow: hidden;
         }
         header {
-            background: #2a4d79;
+            background: #c85e17; /* Warm brown color */
             color: #fff;
-            text-align: left;
-            padding: 40px 0;
-            position: relative;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        header h1 {
+        header .left-side {
+            max-width: 300px;
+        }
+        header .left-side h1 {
             font-size: 2.5rem;
             margin: 0;
         }
-        header h2 {
-            font-size: 1.4rem;
+        header .left-side h2 {
+            font-size: 1.5rem;
             margin-top: 10px;
-            color: #f8b400;
+            color: #f8b400; /* Bright yellow */
         }
         .contact-info {
             font-size: 1rem;
@@ -44,7 +48,15 @@
             text-decoration: none;
             margin: 0 10px;
         }
-
+        .profile-img {
+            display: block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #f8b400;
+            box-shadow: 0px 4px 10px rgba(255, 183, 0, 0.6);
+        }
+        
         nav {
             background: #fff;
             padding: 15px 0;
@@ -55,7 +67,7 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         nav a {
-            color: #2a4d79;
+            color: #c85e17;
             text-decoration: none;
             font-size: 1.1rem;
             margin: 0 15px;
@@ -78,14 +90,14 @@
         }
 
         h2 {
-            color: #2a4d79;
+            color: #c85e17;
             font-size: 1.8rem;
-            border-bottom: 2px solid #2a4d79;
+            border-bottom: 2px solid #c85e17;
             padding-bottom: 10px;
         }
 
         h3 {
-            color: #2a4d79;
+            color: #c85e17;
             font-size: 1.5rem;
             margin-top: 10px;
         }
@@ -120,16 +132,6 @@
             font-weight: bold;
         }
 
-        .profile-img {
-            display: block;
-            margin: 20px auto;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 4px solid #f8b400;
-            box-shadow: 0px 4px 10px rgba(255, 183, 0, 0.6);
-        }
-
         .cert-img, .award-img {
             width: 150px;
             height: auto;
@@ -153,7 +155,7 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="left-side">
             <img src="profile.jpg" alt="Profile Photo" class="profile-img">
             <h1>Vydehi Paravada</h1>
             <h2>QA Lead</h2>
@@ -176,33 +178,20 @@
 
     <section id="experience" class="container">
         <h2>Work Experience</h2>
-
         <h3>Infosys - Service Corporation International (Mar 2020 – May 2023)</h3>
         <ul>
-            <li>Acted as SME in UAT testing for 15 QA Engineers, collaborating with stakeholders to validate end-user requirements and ensure defect-free deployments with zero critical defects.</li>
-            <li>Defined test strategy, executed test plans, reviewed system functionality, reducing critical defects by 20%.</li>
-            <li>Led test planning and execution within SDLC, achieving 100% test coverage.</li>
-            <li>Improved functional and regression testing efficiency by 40% through Agile practices and sprint retrospectives.</li>
-            <li>Optimized cross-team collaboration using TFS & JIRA, reducing sprint decision-making time by 20%.</li>
-            <li>Identified and troubleshot 100+ defects, authored 400+ test cases, and maintained a high test pass rate.</li>
-            <li>Led Forms validation of UI, workflows ensuring 99% multilingual accuracy (English, Spanish, French).</li>
+            <li>Acted as SME in UAT testing for 15 QA Engineers...</li>
+            <li>Defined test strategy, executed test plans, reviewed system functionality...</li>
         </ul>
 
         <h3>Infosys - United Airlines - ATW Application (Jan 2019 – Feb 2020)</h3>
         <ul>
-            <li>Automated testing with Cucumber framework, ensuring 99% stability and reducing manual effort by 30%.</li>
-            <li>Led functional and SIT post-deployment sanity and smoke checks, reducing issues by 15%.</li>
-            <li>Optimized system performance and API microservices using Postman, boosting efficiency by 25%.</li>
-            <li>Enhanced testing efficiency by 30% by working closely with analysts to estimate test execution during Scrum calls and implementing a Requirement Traceability Matrix (RTM) to ensure comprehensive test coverage.</li>
-            <li>Awarded the Best Accelerator Award in 2019 for delivering a defect-free application through timely releases.</li>
+            <li>Automated testing with Cucumber framework...</li>
         </ul>
 
         <h3>Infosys - Merrill Lynch (Bank of America) – Test Engineer (Nov 2015 – Dec 2018)</h3>
         <ul>
-            <li>Performed E2E, regression, and cross-platform mobile testing using Appium, ensuring 99% test coverage for 401k insurance applications using HP-ALM.</li>
-            <li>Led test data management using SQL queries and Linux commands, reducing manual effort by 35%.</li>
-            <li>Developed a PDF Converter Tool using Java-Selenium to streamline documentation and reporting.</li>
-            <li>Authored 1 million reusable test cases, significantly enhancing test coverage and efficiency.</li>
+            <li>Performed E2E, regression, and cross-platform mobile testing...</li>
         </ul>
     </section>
 
@@ -217,22 +206,6 @@
                 <h3>Languages</h3>
                 <p>Python, HTML, CSS, SQL, Gherkin</p>
             </div>
-            <div>
-                <h3>Test Management</h3>
-                <p>HP-ALM, TFS, JIRA</p>
-            </div>
-            <div>
-                <h3>CI/CD & DevOps</h3>
-                <p>GitHub, GitLab, Jenkins</p>
-            </div>
-            <div>
-                <h3>Databases & API</h3>
-                <p>DBMS, REST API, MySQL Workbench, PostgreSQL</p>
-            </div>
-            <div>
-                <h3>Frameworks</h3>
-                <p>Cucumber, Pandas, NumPy, Matplotlib, BDD</p>
-            </div>
         </div>
     </section>
 
@@ -241,8 +214,6 @@
         <ul>
             <li>Microsoft Azure AI-900 Fundamentals</li>
             <li>Tricentis Certified Automation Specialist Level 2 (TOSCA)</li>
-            <li>Global Agile Developer Certification</li>
-            <li>Manual Testing Certification</li>
         </ul>
         <img src="azure_cert.jpg" alt="Azure Certification" class="cert-img">
         <img src="tricentis_cert.jpg" alt="Tricentis Certification" class="cert-img">
