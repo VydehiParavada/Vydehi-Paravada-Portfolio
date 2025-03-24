@@ -9,157 +9,149 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f5;
+      background-color: #a8dadc; /* Light Blue Background */
       display: flex;
+      justify-content: center;
       height: 100vh;
-      overflow: hidden;
+      overflow: auto;
     }
 
-    /* Left Section (20%) */
-    .left-section {
-      width: 20%;
-      background-color: #1d3557;
-      color: white;
-      padding: 40px;
-      box-sizing: border-box;
+    /* Container to center all content */
+    .container {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Centered Profile Section */
+    .profile-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      transition: all 0.3s ease-in-out;
-    }
-    .left-section:hover {
-      background-color: #457b9d;
+      margin-bottom: 40px;
+      text-align: center;
     }
 
-    /* Header with Profile Picture */
-    .profile-pic-container {
-      text-align: center;
-      margin-bottom: 20px;
-    }
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
-      border: 3px solid #fff;
+      border: 4px solid #f1faee;
     }
+
     .name {
       font-size: 32px;
       font-weight: bold;
-      color: #f1faee;
+      color: #1d3557;
     }
+
     .title {
       font-size: 24px;
-      color: #e63946;
-      margin-top: 5px;
+      color: #457b9d;
     }
-    
-    /* Contact Info */
-    .contact-info p {
-      margin: 8px 0;
-      font-size: 16px;
+
+    /* Navigation */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      width: 100%;
     }
-    .contact-info a {
-      color: #f1faee;
+
+    .nav-links a {
+      color: #1d3557;
+      font-size: 18px;
       text-decoration: none;
-      transition: color 0.3s;
-    }
-    .contact-info a:hover {
-      color: #ffb703;
-    }
-
-    /* Right Section (80%) */
-    .right-section {
-      width: 80%;
-      padding: 30px;
+      padding: 8px 16px;
+      border-radius: 25px;
       background-color: #f1faee;
-      box-sizing: border-box;
-      overflow-y: scroll;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-    /* Section Titles */
+    .nav-links a:hover {
+      background-color: #457b9d;
+      color: #f1faee;
+    }
+
+    /* Main Content Section */
+    .main-content {
+      width: 100%;
+      background-color: #f1faee;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-top: 40px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
     .section-title {
       font-size: 28px;
-      color: #e63946;
-      margin-top: 40px;
+      color: #1d3557;
       margin-bottom: 15px;
-      text-align: left;
-      border-bottom: 2px solid #e63946;
-      padding-bottom: 5px;
+      border-bottom: 2px solid #457b9d;
+      padding-bottom: 10px;
     }
 
-    /* Content Box */
-    .content-box {
+    .section-content {
       margin-top: 15px;
-      text-align: left;
     }
+
+    /* Content Boxes (Work Experience, Certifications, etc.) */
+    .content-box {
+      margin-top: 20px;
+    }
+
     .content-box ul {
       list-style-type: none;
       padding: 0;
     }
+
     .content-box li {
+      font-size: 16px;
       margin: 10px 0;
-      font-size: 16px;
     }
 
-    /* Navigation Links */
-    .nav-links {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 30px;
-      border-top: 1px solid #fff;
-      padding-top: 10px;
-      width: 100%;
-    }
-    .nav-links a {
-      color: #f1faee;
-      font-size: 16px;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 25px;
-      transition: background-color 0.3s;
-    }
-    .nav-links a:hover {
-      background-color: #457b9d;
+    .content-box img {
+      max-width: 150px;
+      margin-top: 10px;
+      border-radius: 8px;
     }
 
-    /* Scrollable Content Section */
+    /* Scrollable Sections */
     .scrollable {
-      max-height: 400px;
+      max-height: 300px;
       overflow-y: auto;
     }
-    
-    /* Additional Styling for Interaction */
-    .image {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-top: 15px;
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
-  <!-- Left Section -->
-  <div class="left-section">
-    <div class="profile-pic-container">
+
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile-container">
       <img src="profile.jpg" alt="Vydehi's Profile Picture" class="profile-pic">
       <div class="name">Vydehi Paravada</div>
       <div class="title">Technical Test Lead</div>
     </div>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:vydehiparavada@gmail.com">vydehiparavada@gmail.com</a></p>
-      <p><strong>Phone:</strong> +1 919-793-8199</p>
-      <p><strong>Location:</strong> Cary, NC</p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vydehiparavada">LinkedIn</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/vydehiparavada">GitHub</a></p>
-    </div>
-  </div>
 
-  <!-- Right Section -->
-  <div class="right-section">
+    <!-- Navigation Links -->
     <div class="nav-links">
       <a href="#work-experience">Work Experience</a>
       <a href="#certifications">Certifications</a>
@@ -168,58 +160,71 @@
       <a href="#education">Education</a>
     </div>
 
-    <!-- Work Experience Section -->
-    <section id="work-experience">
-      <h2 class="section-title">Work Experience</h2>
-      <div class="content-box scrollable">
-        <h3>Infosys - Service Corporation International</h3>
-        <p><strong>Role:</strong> Technical Test Lead | <strong>Dates:</strong> Mar 2020 – May 2023</p>
-        <ul>
-          <li>Led UAT testing for 15 QA Engineers, reducing critical defects by 20%</li>
-          <li>Improved test efficiency by 40% through Agile practices</li>
-        </ul>
-      </div>
-    </section>
+    <!-- Main Content -->
+    <div class="main-content">
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2 class="section-title">Certifications</h2>
-      <div class="content-box scrollable">
-        <p><strong>Microsoft Azure AI-900 Fundamentals</strong></p>
-        <img src="azure_cert.jpg" alt="Azure Certification" class="image">
-        <p><strong>Tricentis Certified Automation Specialist Level2 (TOSCA)</strong></p>
-        <img src="tosca_cert.jpg" alt="TOSCA Certification" class="image">
-      </div>
-    </section>
+      <!-- Work Experience Section -->
+      <section id="work-experience" class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="content-box scrollable">
+          <h3>Infosys - Service Corporation International</h3>
+          <p><strong>Role:</strong> Technical Test Lead | <strong>Dates:</strong> Mar 2020 – May 2023</p>
+          <ul>
+            <li>Led UAT testing for 15 QA Engineers, reducing critical defects by 20%</li>
+            <li>Improved test efficiency by 40% through Agile practices</li>
+            <li>Managed end-to-end test cases and ensured 100% test coverage</li>
+            <li>Optimized cross-team collaboration, reducing sprint decision-making time by 20%</li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- Awards Section -->
-    <section id="awards">
-      <h2 class="section-title">Awards</h2>
-      <div class="content-box">
-        <p><strong>Best Accelerator Award</strong> (2019) - Awarded for delivering a defect-free application.</p>
-        <img src="award.jpg" alt="Award" class="image">
-      </div>
-    </section>
+      <!-- Certifications Section -->
+      <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="content-box">
+          <p><strong>Microsoft Azure AI-900 Fundamentals</strong></p>
+          <img src="azure_cert.jpg" alt="Azure Certification" class="image">
+          <p><strong>Tricentis Certified Automation Specialist Level2 (TOSCA)</strong></p>
+          <img src="tosca_cert.jpg" alt="TOSCA Certification" class="image">
+        </div>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="content-box">
-        <ul>
-          <li><strong>QA Tools:</strong> Selenium, Postman, Fiddler, Protractor, Appium</li>
-          <li><strong>Languages:</strong> Python, HTML, CSS, SQL, Gherkin</li>
-        </ul>
-      </div>
-    </section>
+      <!-- Awards Section -->
+      <section id="awards" class="section">
+        <h2 class="section-title">Awards</h2>
+        <div class="content-box">
+          <p><strong>Best Accelerator Award</strong> (2019) - Awarded for delivering a defect-free application.</p>
+          <img src="award.jpg" alt="Award" class="image">
+        </div>
+      </section>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="content-box">
-        <p><strong>Master of Science in Information Technology and Management</strong> - University of North Carolina, Greensboro, NC (Expected May 2025)</p>
-        <p><strong>Bachelor of Technology in Computer Science and Engineering</strong> - Jawaharlal Nehru Technological University, India (April 2015)</p>
-      </div>
-    </section>
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="content-box">
+          <ul>
+            <li><strong>QA Tools:</strong> Selenium, Postman, Fiddler, Protractor, Appium</li>
+            <li><strong>Languages:</strong> Python, HTML, CSS, SQL, Gherkin</li>
+            <li><strong>Test Management Tools:</strong> HP-ALM, TFS, JIRA</li>
+            <li><strong>CI/CD & DevOps:</strong> GitHub, GitLab, Jenkins</li>
+            <li><strong>Databases & API:</strong> DBMS, REST API, MySQL Workbench, PostgreSQL</li>
+            <li><strong>Tools:</strong> Visual Studio, Jupyter Notebook, Tableau, MS Excel</li>
+            <li><strong>Frameworks:</strong> Cucumber, Pandas, NumPy, Matplotlib, BDD</li>
+            <li><strong>Soft Skills:</strong> Leadership, Critical thinking, Cross-functional Communication</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="content-box">
+          <p><strong>Master of Science in Information Technology and Management</strong> - University of North Carolina, Greensboro, NC (Expected May 2025)</p>
+          <p><strong>Bachelor of Technology in Computer Science and Engineering</strong> - Jawaharlal Nehru Technological University, India (April 2015)</p>
+        </div>
+      </section>
+
+    </div>
   </div>
 
 </body>
