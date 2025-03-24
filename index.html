@@ -6,28 +6,44 @@
   <title>Vydehi Paravada - Technical Test Lead</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
+      background-color: #f0f0f5;
       display: flex;
+      height: 100vh;
+      overflow: hidden;
     }
+
+    /* Left Section (20%) */
     .left-section {
       width: 20%;
       background-color: #1d3557;
       color: white;
-      padding: 20px;
+      padding: 40px;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
     }
-    .right-section {
-      width: 80%;
-      padding: 20px;
-      background-color: #fff;
-      box-sizing: border-box;
+    .left-section:hover {
+      background-color: #457b9d;
     }
-    header {
+
+    /* Header with Profile Picture */
+    .profile-pic-container {
       text-align: center;
       margin-bottom: 20px;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #fff;
     }
     .name {
       font-size: 32px;
@@ -37,25 +53,47 @@
     .title {
       font-size: 24px;
       color: #e63946;
+      margin-top: 5px;
     }
+    
+    /* Contact Info */
     .contact-info p {
-      margin: 5px 0;
+      margin: 8px 0;
       font-size: 16px;
     }
     .contact-info a {
       color: #f1faee;
       text-decoration: none;
+      transition: color 0.3s;
     }
     .contact-info a:hover {
-      text-decoration: underline;
+      color: #ffb703;
     }
+
+    /* Right Section (80%) */
+    .right-section {
+      width: 80%;
+      padding: 30px;
+      background-color: #f1faee;
+      box-sizing: border-box;
+      overflow-y: scroll;
+    }
+
+    /* Section Titles */
     .section-title {
-      font-size: 24px;
-      margin-top: 30px;
+      font-size: 28px;
       color: #e63946;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      text-align: left;
+      border-bottom: 2px solid #e63946;
+      padding-bottom: 5px;
     }
+
+    /* Content Box */
     .content-box {
       margin-top: 15px;
+      text-align: left;
     }
     .content-box ul {
       list-style-type: none;
@@ -65,21 +103,52 @@
       margin: 10px 0;
       font-size: 16px;
     }
-    .image {
+
+    /* Navigation Links */
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      border-top: 1px solid #fff;
+      padding-top: 10px;
       width: 100%;
+    }
+    .nav-links a {
+      color: #f1faee;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+    }
+    .nav-links a:hover {
+      background-color: #457b9d;
+    }
+
+    /* Scrollable Content Section */
+    .scrollable {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    
+    /* Additional Styling for Interaction */
+    .image {
       max-width: 200px;
+      width: 100%;
+      height: auto;
       border-radius: 10px;
-      margin: 10px 0;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
+  <!-- Left Section -->
   <div class="left-section">
-    <header>
-      <img src="profile.jpg" alt="Vydehi's Profile Picture" class="image">
+    <div class="profile-pic-container">
+      <img src="profile.jpg" alt="Vydehi's Profile Picture" class="profile-pic">
       <div class="name">Vydehi Paravada</div>
       <div class="title">Technical Test Lead</div>
-    </header>
+    </div>
     <div class="contact-info">
       <p><strong>Email:</strong> <a href="mailto:vydehiparavada@gmail.com">vydehiparavada@gmail.com</a></p>
       <p><strong>Phone:</strong> +1 919-793-8199</p>
@@ -89,10 +158,20 @@
     </div>
   </div>
 
+  <!-- Right Section -->
   <div class="right-section">
-    <section>
+    <div class="nav-links">
+      <a href="#work-experience">Work Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#awards">Awards</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </div>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience">
       <h2 class="section-title">Work Experience</h2>
-      <div class="content-box">
+      <div class="content-box scrollable">
         <h3>Infosys - Service Corporation International</h3>
         <p><strong>Role:</strong> Technical Test Lead | <strong>Dates:</strong> Mar 2020 – May 2023</p>
         <ul>
@@ -100,12 +179,12 @@
           <li>Improved test efficiency by 40% through Agile practices</li>
         </ul>
       </div>
-      <!-- More work experiences can be added here -->
     </section>
 
-    <section>
+    <!-- Certifications Section -->
+    <section id="certifications">
       <h2 class="section-title">Certifications</h2>
-      <div class="content-box">
+      <div class="content-box scrollable">
         <p><strong>Microsoft Azure AI-900 Fundamentals</strong></p>
         <img src="azure_cert.jpg" alt="Azure Certification" class="image">
         <p><strong>Tricentis Certified Automation Specialist Level2 (TOSCA)</strong></p>
@@ -113,7 +192,8 @@
       </div>
     </section>
 
-    <section>
+    <!-- Awards Section -->
+    <section id="awards">
       <h2 class="section-title">Awards</h2>
       <div class="content-box">
         <p><strong>Best Accelerator Award</strong> (2019) - Awarded for delivering a defect-free application.</p>
@@ -121,7 +201,8 @@
       </div>
     </section>
 
-    <section>
+    <!-- Skills Section -->
+    <section id="skills">
       <h2 class="section-title">Skills</h2>
       <div class="content-box">
         <ul>
@@ -131,7 +212,8 @@
       </div>
     </section>
 
-    <section>
+    <!-- Education Section -->
+    <section id="education">
       <h2 class="section-title">Education</h2>
       <div class="content-box">
         <p><strong>Master of Science in Information Technology and Management</strong> - University of North Carolina, Greensboro, NC (Expected May 2025)</p>
@@ -139,5 +221,6 @@
       </div>
     </section>
   </div>
+
 </body>
 </html>
