@@ -18,6 +18,13 @@
             padding: 20px;
             text-align: center;
         }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -28,9 +35,19 @@
             color: white;
             padding: 10px 20px;
             text-decoration: none;
+            background: #005580;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: #003366;
         }
         section {
             padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
         }
         .skills-container div {
             display: inline-block;
@@ -38,19 +55,34 @@
             padding: 10px;
             margin: 5px;
             border-radius: 5px;
+            font-weight: bold;
         }
         .certification-img, .award-img {
-            width: 200px;
+            width: 300px;
             height: auto;
-            display: block;
-            margin: 10px auto;
+            display: inline-block;
+            margin: 10px;
+        }
+        .contact-details {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .contact-details a {
+            margin: 0 10px;
+            color: #004466;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="profile.jpg" alt="Vydehi Paravada">
         <h1>Vydehi Paravada</h1>
         <h3>Technical Test Lead</h3>
+        <div class="contact-details">
+            <p>vydehiparavada@gmail.com | +1 919-793-8199 | <a href="https://www.linkedin.com/in/VydehiParavada">LinkedIn</a> | <a href="https://github.com/VydehiParavada">GitHub</a> | Cary, NC</p>
+        </div>
     </header>
     <nav>
         <a href="#about">About</a>
@@ -65,66 +97,43 @@
         <p>Results-driven Technical Test Lead with 7.7 years in automation, manual testing, and QA leadership. Improved test efficiency by 40% and reduced defects by 30%. Skilled in Agile, Waterfall, and cross-industry problem-solving.</p>
     </section>
     <section id="experience">
-        <h2>Work Experience</h2>
-        <h3>Infosys - Service Corporation International – Technical Test Lead (Mar 2020 – May 2023)</h3>
-        <ul>
-            <li>Acted as SME in UAT testing for 15 QA Engineers, collaborating with stakeholders to validate end-user requirements and ensure defect-free deployments with zero critical defects.</li>
-            <li>Defined test strategy, executed test plans, reviewed system functionality, reducing critical defects by 20%.</li>
-            <li>Led test planning and execution within SDLC, achieving 100% test coverage.</li>
-            <li>Improved functional and regression testing efficiency by 40% through Agile practices and sprint retrospectives.</li>
-            <li>Optimized cross-team collaboration using TFS & JIRA, reducing sprint decision-making time by 20%.</li>
-            <li>Identified and troubleshot 100+ defects, authored 400+ test cases, and maintained a high test pass rate.</li>
-            <li>Led Forms validation of UI, workflows ensuring 99% multilingual accuracy (English, Spanish, French).</li>
-        </ul>
-        <h3>Infosys - United Airlines - ATW Application – Test Analyst (Jan 2019 – Feb 2020)</h3>
-        <ul>
-            <li>Automated testing with Cucumber framework, ensuring 99% stability and reducing manual effort by 30%.</li>
-            <li>Led functional and SIT post-deployment sanity and smoke checks, reducing issues by 15%.</li>
-            <li>Optimized system performance and API microservices using Postman, boosting efficiency by 25%.</li>
-            <li>Enhanced testing efficiency by 30% by working closely with analysts to estimate test execution during Scrum calls and implementing a Requirement Traceability Matrix (RTM) to ensure comprehensive test coverage.</li>
-            <li>Awarded the Best Accelerator Award in 2019 for delivering a defect-free application through timely releases.</li>
-        </ul>
-        <h3>Infosys - Merrill Lynch (Bank of America) – Test Engineer (Nov 2015 – Dec 2018)</h3>
-        <ul>
-            <li>Performed E2E, regression, and cross-platform mobile testing using Appium, ensuring 99% test coverage for 401k insurance applications using HP-ALM.</li>
-            <li>Led test data management using SQL queries and Linux commands, reducing manual effort by 35%.</li>
-            <li>Developed a PDF Converter Tool using Java-Selenium to streamline documentation and reporting.</li>
-            <li>Authored 1 million reusable test cases, significantly enhancing test coverage and efficiency.</li>
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div>QA Tools: Selenium, Postman, Fiddler, Protractor, Appium</div>
-            <div>Languages: Python, HTML, CSS, SQL, Gherkin</div>
-            <div>Test Management: HP-ALM, TFS, JIRA</div>
-            <div>CI/CD: GitHub, GitLab, Jenkins</div>
-            <div>Databases & API: DBMS, REST API, MySQL Workbench, PostgreSQL</div>
-            <div>Tools: Visual Studio, Jupyter Notebook, Tableau, MS Excel</div>
-            <div>Frameworks: Cucumber, Pandas, NumPy, Matplotlib, BDD</div>
-            <div>Soft Skills: Leadership, Critical Thinking, Cross-functional Communication</div>
-        </div>
-    </section>
-    <section id="awards">
-        <h2>Awards</h2>
-        <img class="award-img" src="GraciosAward.PNG">
-        <img class="award-img" src="Insta1.png">
-        <img class="award-img" src="Insta2.png">
-        <img class="award-img" src="VydehiParavada (8).png">
-        <img class="award-img" src="VydehiParavada (9).png">
-        <img class="award-img" src="VydehiParavada (10).png">
+    <h2>Work Experience</h2>
+    <h3>Infosys - Service Corporation International – Technical Test Lead (Mar 2020 – May 2023)</h3>
+    <ul>
+        <li>Acted as SME in UAT testing for 15 QA Engineers, collaborating with stakeholders to validate end-user requirements and ensure defect-free deployments with zero critical defects.</li>
+        <li>Defined test strategy, executed test plans, reviewed system functionality, reducing critical defects by 20%.</li>
+        <li>Led test planning and execution within SDLC, achieving 100% test coverage.</li>
+        <li>Improved functional and regression testing efficiency by 40% through Agile practices and sprint retrospectives.</li>
+        <li>Optimized cross-team collaboration using TFS & JIRA, reducing sprint decision-making time by 20%.</li>
+        <li>Identified and troubleshot 100+ defects, authored 400+ test cases, and maintained a high test pass rate.</li>
+        <li>Led Forms validation of UI, workflows ensuring 99% multilingual accuracy (English, Spanish, French).</li>
+    </ul>
+
+    <h3>Infosys - United Airlines - ATW Application – Test Analyst (Jan 2019 – Feb 2020)</h3>
+    <ul>
+        <li>Automated testing with Cucumber framework, ensuring 99% stability and reducing manual effort by 30%.</li>
+        <li>Led functional and SIT post-deployment sanity and smoke checks, reducing issues by 15%.</li>
+        <li>Optimized system performance and API microservices using Postman, boosting efficiency by 25%.</li>
+        <li>Enhanced testing efficiency by 30% by working closely with analysts to estimate test execution during Scrum calls and implementing a Requirement Traceability Matrix (RTM) to ensure comprehensive test coverage.</li>
+        <li>Awarded the Best Accelerator Award in 2019 for delivering a defect-free application through timely releases.</li>
+    </ul>
+
+    <h3>Infosys - Merrill Lynch (Bank of America) – Test Engineer (Nov 2015 – Dec 2018)</h3>
+    <ul>
+        <li>Performed E2E, regression, and cross-platform mobile testing using Appium, ensuring 99% test coverage for 401k insurance applications using HP-ALM.</li>
+        <li>Led test data management using SQL queries and Linux commands, reducing manual effort by 35%.</li>
+        <li>Developed a PDF Converter Tool using Java-Selenium to streamline documentation and reporting.</li>
+        <li>Authored 1 million reusable test cases, significantly enhancing test coverage and efficiency.</li>
+    </ul>
+</section>
+
     </section>
     <section id="certifications">
         <h2>Certifications</h2>
         <p>Global Agile Developer Certification</p>
         <p>Manual Testing Certification</p>
-        <img class="certification-img" src="TricentisCertifiedAutomationSpecialistLevel2.pdf">
-        <img class="certification-img" src="Azure AI Fundamentals.pdf">
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p>MSc, Information Technology & Management, UNC Greensboro (2025) - GPA: 3.9</p>
-        <p>BTech, Computer Science & Engineering, JNTU (2015) - GPA: 4.0</p>
+        <img class="certification-img" src="https://github.com/VydehiParavada/Vydehi-Paravada-Portfolio/blob/main/Azure.jpg">
+        <img class="certification-img" src="https://github.com/VydehiParavada/Vydehi-Paravada-Portfolio/blob/main/TricentisCertifiedAutomationSpecialistLevel2.jpg">
     </section>
 </body>
 </html>
