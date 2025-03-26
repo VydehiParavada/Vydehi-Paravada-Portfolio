@@ -1,252 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vydehi Paravada - Portfolio</title>
-  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script>
-  <style>
-    /* Reset some default browser styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f4f4f4;
-      padding-top: 60px; /* For fixed navigation */
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #333;
-      color: #fff;
-      padding: 10px 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    header {
-      display: flex;
-      justify-content: center;
-      padding: 50px 20px;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-    }
-
-    .profile-pic {
-      width: 150px;
-      border-radius: 50%;
-      margin-right: 20px;
-    }
-
-    .header-text h1 {
-      font-size: 36px;
-    }
-
-    .header-text p {
-      font-size: 18px;
-    }
-
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: 24px;
-      margin-top: 20px;
-    }
-
-    .skill-box {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .skill {
-      background-color: #ffcc00;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 18px;
-      text-align: center;
-      flex: 1;
-      min-width: 150px;
-    }
-
-    .experience-item ul {
-      list-style-type: none;
-      margin-top: 10px;
-      font-size: 16px;
-      text-align: left;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .certification, .award {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .certification img, .award img {
-      max-width: 200px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    footer p {
-      font-size: 16px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vydehi Paravada - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #004466;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #006699;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .skills-container div {
+            display: inline-block;
+            background: #ffcc00;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .certification-img, .award-img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Work Experience</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header>
-    <div class="header-content">
-      <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-      <div class="header-text">
+    <header>
         <h1>Vydehi Paravada</h1>
-        <p>Test Lead | Software Engineer | QA Specialist</p>
-        <p>Email: vydehiparavada@gmail.com | LinkedIn: <a href="#">LinkedIn URL</a> | GitHub: <a href="#">GitHub URL</a> | Location: RTP, North Carolina</p>
-      </div>
-    </div>
-  </header>
-
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate Test Lead with over 7 years of experience in automation and manual testing. I specialize in driving operational excellence across industries using modern testing tools and Agile methodologies. I am always looking for new challenges to improve quality and streamline processes.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-      <div class="skill">Selenium</div>
-      <div class="skill">Postman</div>
-      <div class="skill">Python</div>
-      <div class="skill">Java</div>
-      <div class="skill">SQL</div>
-      <div class="skill">JIRA</div>
-    </div>
-  </section>
-
-  <!-- Work Experience Section -->
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <div class="experience-item">
-      <h3>Test Lead at Service Corporation International (Apr 2020 – May 2023)</h3>
-      <ul>
-        <li>Led a team of testers to ensure product quality using automation and manual testing techniques.</li>
-        <li>Improved test efficiency by 40% and reduced defects by 30%.</li>
-        <li>Streamlined testing processes and introduced new tools, reducing test cycle time by 25%.</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <h3>Test Analyst at United Airlines (Jan 2019 – Mar 2020)</h3>
-      <ul>
-        <li>Managed and executed test cases for multiple airline applications.</li>
-        <li>Collaborated with developers to identify and resolve defects.</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <h3>Software Test Engineer at Merrill Lynch (Nov 2015 – Dec 2018)</h3>
-      <ul>
-        <li>Developed and executed manual and automated test scripts.</li>
-        <li>Worked in an Agile environment to ensure fast and efficient delivery.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certification">
-      <img src="cert1.jpg" alt="Certification Image">
-      <p>Microsoft Azure AI-900 Fundamentals</p>
-    </div>
-    <div class="certification">
-      <img src="cert2.jpg" alt="Certification Image">
-      <p>Tricentis Certified Automation Specialist Level 2</p>
-    </div>
-  </section>
-
-  <!-- Awards Section -->
-  <section id="awards">
-    <h2>Awards</h2>
-    <div class="award">
-      <img src="award1.jpg" alt="Award Image">
-      <p>Best Test Lead of the Year 2021</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: vydehiparavada@gmail.com</p>
-    <p>LinkedIn: <a href="#">LinkedIn URL</a></p>
-    <p>GitHub: <a href="#">GitHub URL</a></p>
-    <p>Location: RTP, North Carolina</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Vydehi Paravada. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Smooth scroll functionality
-    var scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 800,
-      offset: 100
-    });
-  </script>
+        <h3>Technical Test Lead</h3>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+    </nav>
+    <section id="about">
+        <h2>About</h2>
+        <p>Results-driven Technical Test Lead with 7.7 years in automation, manual testing, and QA leadership. Improved test efficiency by 40% and reduced defects by 30%. Skilled in Agile, Waterfall, and cross-industry problem-solving.</p>
+    </section>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>Infosys - Service Corporation International – Technical Test Lead (Mar 2020 – May 2023)</h3>
+        <ul>
+            <li>Acted as SME in UAT testing for 15 QA Engineers, collaborating with stakeholders to validate end-user requirements and ensure defect-free deployments with zero critical defects.</li>
+            <li>Defined test strategy, executed test plans, reviewed system functionality, reducing critical defects by 20%.</li>
+            <li>Led test planning and execution within SDLC, achieving 100% test coverage.</li>
+            <li>Improved functional and regression testing efficiency by 40% through Agile practices and sprint retrospectives.</li>
+            <li>Optimized cross-team collaboration using TFS & JIRA, reducing sprint decision-making time by 20%.</li>
+            <li>Identified and troubleshot 100+ defects, authored 400+ test cases, and maintained a high test pass rate.</li>
+            <li>Led Forms validation of UI, workflows ensuring 99% multilingual accuracy (English, Spanish, French).</li>
+        </ul>
+        <h3>Infosys - United Airlines - ATW Application – Test Analyst (Jan 2019 – Feb 2020)</h3>
+        <ul>
+            <li>Automated testing with Cucumber framework, ensuring 99% stability and reducing manual effort by 30%.</li>
+            <li>Led functional and SIT post-deployment sanity and smoke checks, reducing issues by 15%.</li>
+            <li>Optimized system performance and API microservices using Postman, boosting efficiency by 25%.</li>
+            <li>Enhanced testing efficiency by 30% by working closely with analysts to estimate test execution during Scrum calls and implementing a Requirement Traceability Matrix (RTM) to ensure comprehensive test coverage.</li>
+            <li>Awarded the Best Accelerator Award in 2019 for delivering a defect-free application through timely releases.</li>
+        </ul>
+        <h3>Infosys - Merrill Lynch (Bank of America) – Test Engineer (Nov 2015 – Dec 2018)</h3>
+        <ul>
+            <li>Performed E2E, regression, and cross-platform mobile testing using Appium, ensuring 99% test coverage for 401k insurance applications using HP-ALM.</li>
+            <li>Led test data management using SQL queries and Linux commands, reducing manual effort by 35%.</li>
+            <li>Developed a PDF Converter Tool using Java-Selenium to streamline documentation and reporting.</li>
+            <li>Authored 1 million reusable test cases, significantly enhancing test coverage and efficiency.</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div>QA Tools: Selenium, Postman, Fiddler, Protractor, Appium</div>
+            <div>Languages: Python, HTML, CSS, SQL, Gherkin</div>
+            <div>Test Management: HP-ALM, TFS, JIRA</div>
+            <div>CI/CD: GitHub, GitLab, Jenkins</div>
+            <div>Databases & API: DBMS, REST API, MySQL Workbench, PostgreSQL</div>
+            <div>Tools: Visual Studio, Jupyter Notebook, Tableau, MS Excel</div>
+            <div>Frameworks: Cucumber, Pandas, NumPy, Matplotlib, BDD</div>
+            <div>Soft Skills: Leadership, Critical Thinking, Cross-functional Communication</div>
+        </div>
+    </section>
+    <section id="awards">
+        <h2>Awards</h2>
+        <img class="award-img" src="GraciosAward.PNG">
+        <img class="award-img" src="Insta1.png">
+        <img class="award-img" src="Insta2.png">
+        <img class="award-img" src="VydehiParavada (8).png">
+        <img class="award-img" src="VydehiParavada (9).png">
+        <img class="award-img" src="VydehiParavada (10).png">
+    </section>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <p>Global Agile Developer Certification</p>
+        <p>Manual Testing Certification</p>
+        <img class="certification-img" src="TricentisCertifiedAutomationSpecialistLevel2.pdf">
+        <img class="certification-img" src="Azure AI Fundamentals.pdf">
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p>MSc, Information Technology & Management, UNC Greensboro (2025) - GPA: 3.9</p>
+        <p>BTech, Computer Science & Engineering, JNTU (2015) - GPA: 4.0</p>
+    </section>
 </body>
 </html>
